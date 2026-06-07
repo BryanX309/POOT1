@@ -52,7 +52,7 @@ namespace POOT1
                         // Console.WriteLine("Esta seguro que quiere Salir? (Y/N)");
                         // ConsoleKeyInfo tecla = Console.ReadKey();
 
-                        //aqui exit sera verdadero solo si la tecla pulsada es Y cancelando la condición del While
+                        //aquí exit sera verdadero solo si la tecla pulsada es Y cancelando la condición del While
                         //exit = (tecla.Key == ConsoleKey.Y);
                         break;
                     case 1: Eje01 ej1 = new Eje01(); break;
@@ -64,13 +64,13 @@ namespace POOT1
                     case 7: Eje07 ej7 = new Eje07(); break;
                     case 8: Eje08 ej8 = new Eje08(); break;
                     case 9: Eje09 ej9 = new Eje09(); break;
-                    // case 10: Eje10 ej10 = new Eje10(); break;
-                    // case 11: Eje11 ej11 = new Eje11(); break;
-                    // case 12: Eje12 ej12 = new Eje12(); break;
-                    // case 13: Eje13 ej13 = new Eje13(); break;
-                    // case 14: Eje14 ej14 = new Eje14(); break;
-                    // case 15: Eje15 ej15 = new Eje15(); break;
-                    // case 16: Eje16 ej16 = new Eje16(); break;
+                    case 10: Eje10 ej10 = new Eje10(); break;
+                    case 11: Eje11 ej11 = new Eje11(); break;
+                    case 12: Eje12 ej12 = new Eje12(); break;
+                    case 13: Eje13 ej13 = new Eje13(); break;
+                    case 14: Eje14 ej14 = new Eje14(); break;
+                    case 15: Eje15 ej15 = new Eje15(); break;
+                    case 16: Eje16 ej16 = new Eje16(); break;
                     // case 17: Eje17 ej17 = new Eje17(); break;
                     // case 18: Eje18 ej18 = new Eje18(); break;
                     // case 19: Eje19 ej19 = new Eje19(); break;
