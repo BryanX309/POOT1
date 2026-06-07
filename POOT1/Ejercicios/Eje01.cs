@@ -6,19 +6,19 @@ namespace POOT1.Ejercicios
         {
             Console.WriteLine("Calculadora de Indice de Masa Corporal\n----------------------------------------\n");
             Console.WriteLine("Ingrese su Peso (kg): ");
-            double.TryParse(Console.ReadLine(), out double weigth);
+            double.TryParse(Console.ReadLine(), out double peso);
             Console.WriteLine("Ingrese su Altura (mts): ");
-            double.TryParse(Console.ReadLine(), out double heigth);
+            double.TryParse(Console.ReadLine(), out double altura);
 
-            double imc = weigth / heigth;
-            string state;
+            double imc = peso / altura;
+            string estado;
             
-            if(imc >= 30) state = "Obesidad";
-            else if(imc >= 25) state = "Sobrepeso";
-            else if(imc >= 18.5) state = "Peso Normal";
-            else  state = "Peso Bajo";
+            if(imc >= 30) estado = "Obesidad";
+            else if(imc >= 25) estado = "Sobrepeso";
+            else if(imc >= 18.5) estado = "Peso Normal";
+            else  estado = "Peso Bajo";
 
-            Console.WriteLine($"Tu IMC es {imc}\nTienes {state}");
+            Console.WriteLine($"Tu IMC es {imc}\nTienes {estado}");
         }
     }
 }
