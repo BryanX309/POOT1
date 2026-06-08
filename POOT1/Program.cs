@@ -40,6 +40,9 @@ namespace POOT1
                 Console.WriteLine("25. Rotación de arreglo");
                 Console.WriteLine("26. Frecuencia de elementos");
                 Console.WriteLine("27. Arreglo de temperaturas");
+                Console.WriteLine("28. Matriz de notas por parcial");
+                Console.WriteLine("29. Juego de Gato (Tic-Tac-Toe)");
+                Console.WriteLine("30. Inventario simple");
 
                 Console.WriteLine("\nSeleccione la función a probar:");
                 selec = int.Parse(Console.ReadLine());
@@ -71,22 +74,25 @@ namespace POOT1
                     case 14: Eje14 ej14 = new Eje14(); break;
                     case 15: Eje15 ej15 = new Eje15(); break;
                     case 16: Eje16 ej16 = new Eje16(); break;
-                    // case 17: Eje17 ej17 = new Eje17(); break;
-                    // case 18: Eje18 ej18 = new Eje18(); break;
-                    // case 19: Eje19 ej19 = new Eje19(); break;
-                    // case 20: Eje20 ej20 = new Eje20(); break;
-                    // case 21: Eje21 ej21 = new Eje21(); break;
+                    case 17: Eje17 ej17 = new Eje17(); break;
+                    case 18: Eje18 ej18 = new Eje18(); break;
+                    case 19: Eje19 ej19 = new Eje19(); break;
+                    case 20: Eje20 ej20 = new Eje20(); break;
+                    case 21: Eje21 ej21 = new Eje21(); break;
                     // case 22: Eje22 ej22 = new Eje22(); break;
                     // case 23: Eje23 ej23 = new Eje23(); break;
                     // case 24: Eje24 ej24 = new Eje24(); break;
                     // case 25: Eje25 ej25 = new Eje25(); break;
                     // case 26: Eje26 ej26 = new Eje26(); break;
                     // case 27: Eje27 ej27 = new Eje27(); break;
+                    // case 28: Eje28 ej28 = new Eje28(); break;
+                    // case 29: Eje29 ej29 = new Eje29(); break;
+                    // case 30: Eje30 ej30 = new Eje30(); break;
 
                     default: Console.WriteLine("Ingrese un numero valido de Selecion"); Console.ReadKey(); break;
                 }
 
-                if(selec != 0) Console.ReadKey();
+                if (selec != 0) Console.ReadKey();
             }
             Console.WriteLine("Saliendo...");
         }
