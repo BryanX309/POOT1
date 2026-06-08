@@ -79,10 +79,10 @@ namespace POOT1
                     case 19: Eje19 ej19 = new Eje19(); break;
                     case 20: Eje20 ej20 = new Eje20(); break;
                     case 21: Eje21 ej21 = new Eje21(); break;
-                    // case 22: Eje22 ej22 = new Eje22(); break;
-                    // case 23: Eje23 ej23 = new Eje23(); break;
-                    // case 24: Eje24 ej24 = new Eje24(); break;
-                    // case 25: Eje25 ej25 = new Eje25(); break;
+                    case 22: Eje22 ej22 = new Eje22(); break;
+                    case 23: Eje23 ej23 = new Eje23(); break;
+                    case 24: Eje24 ej24 = new Eje24(); break;
+                    case 25: Eje25 ej25 = new Eje25(); break;
                     // case 26: Eje26 ej26 = new Eje26(); break;
                     // case 27: Eje27 ej27 = new Eje27(); break;
                     // case 28: Eje28 ej28 = new Eje28(); break;
