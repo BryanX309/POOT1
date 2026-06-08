@@ -86,8 +86,8 @@ namespace POOT1
                     case 26: Eje26 ej26 = new Eje26(); break;
                     case 27: Eje27 ej27 = new Eje27(); break;
                     case 28: Eje28 ej28 = new Eje28(); break;
-                    // case 29: Eje29 ej29 = new Eje29(); break;
-                    // case 30: Eje30 ej30 = new Eje30(); break;
+                    case 29: Eje29 ej29 = new Eje29(); break;
+                    case 30: Eje30 ej30 = new Eje30(); break;
 
                     default: Console.WriteLine("Ingrese un numero valido de Selecion"); Console.ReadKey(); break;
                 }

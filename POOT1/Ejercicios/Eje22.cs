@@ -17,9 +17,9 @@ namespace POOT1.Ejercicios
             do
             {
                 Console.Clear();
-                Console.WriteLine("\n========================================");
+                Console.WriteLine("\n----------------------------------------");
                 Console.WriteLine("          CALCULADORA INTERACTIVA       ");
-                Console.WriteLine("========================================");
+                Console.WriteLine("----------------------------------------");
 
                 Console.WriteLine("");
                 Console.WriteLine("1. Sumar");
