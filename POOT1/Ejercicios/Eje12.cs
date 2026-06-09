@@ -10,7 +10,7 @@ namespace POOT1.Ejercicios
         public Eje12()
         {
             int anio = 0, mes = 0;
-            Console.WriteLine("Calculadora de descuentos\n----------------------------------------\n");
+            Console.WriteLine("Año bisiesto y días del mes\n----------------------------------------\n");
 
         while (anio <= 0)
             {

@@ -12,32 +12,32 @@ namespace POOT1.Ejercicios
             while (hrs <= 0)
             {
                 Console.WriteLine("Ingrese las Horas Trabajadas en esta Semana\n(solo horas enteras): ");
-                if (int.TryParse(Console.ReadLine(), out hrs))
+                if (int.TryParse(Console.ReadLine(), out hrs) && hrs>0)
                 {
                     while (tarifa <= 0)
                     {
                         Console.WriteLine("Ingrese la tarifa por hora trabajada (L.): ");
-                        if (decimal.TryParse(Console.ReadLine(), out tarifa))
+                        if (decimal.TryParse(Console.ReadLine(), out tarifa)&& tarifa>0)
                         {
 
                             //Calculo de Salario Total
                             salario = hrs * tarifa + (hrs > hrsNormales ? (hrs-hrsNormales) * tarifa * 0.5m : 0);
 
-                            Console.WriteLine("DESGLOSE DE SALARIO");
+                            Console.WriteLine("\nDESGLOSE DE SALARIO\n----------------------------------------\n");
                             Console.WriteLine($"{(hrs > hrsNormales ? hrsNormales : hrs)} Horas Normales: L.{Math.Min(hrs,hrsNormales) * tarifa}");
                             if(hrs>44) Console.WriteLine($"{hrs-hrsNormales} Horas Extra: L.{(hrs-hrsNormales) * tarifa * 1.5m}");
                             Console.WriteLine($"\nSALARIO TOTAL: L.{salario}");
                         }
                         else
                         {
-                            Console.WriteLine("Ingrese una Tarifa valida");
+                            Console.WriteLine("\nIngrese una Tarifa valida\n");
                             tarifa = 0;
                         }
                     }
                 }
                 else
                 {
-                    Console.WriteLine("Ingrese un numero de Horas valido");
+                    Console.WriteLine("\nIngrese un numero de Horas valido\n");
                     hrs = 0;
                 }
             }

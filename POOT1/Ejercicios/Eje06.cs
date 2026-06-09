@@ -15,16 +15,19 @@ namespace POOT1.Ejercicios
             double area = 0, perimtr = 0;
             Console.WriteLine("Área y perímetro\n----------------------------------------");
 
-            while (!fin)
-            {
+            do{
+                int selec=0;
                 Console.WriteLine("Que Figura desea conocer su area y perímetro?");
                 Console.WriteLine("1. Círculo");
                 Console.WriteLine("2. Triángulo");
                 Console.WriteLine("3. Rectángulo");
                 Console.WriteLine("4. Trapecio");
-                int.TryParse(Console.ReadLine(), out int selec);
+                
+                if (!int.TryParse(Console.ReadLine(), out selec) || selec < 1 || selec > 4)
+                    selec = 0;
 
                 fin = true; // este valor se mantendrá a menos que se ingresen valores inválidos y vuelva a ser false
+                Console.WriteLine();
                 switch (selec)
                 {
                     case 1: //Circulo
@@ -111,16 +114,14 @@ namespace POOT1.Ejercicios
                         }
                         break;
 
-
-
                     default:
                         msgReinicio("SELECCIONE UNA OPCIÓN VALIDA");
                         fin = false;
                         break;
                 }
-            }
+            }while (!fin);
 
-            Console.WriteLine($"Area: {area}\nPerímetro: {perimtr}");
+            Console.WriteLine($"\nArea: {area:F2}\nPerímetro: {perimtr:F2}");
         }
     }
 }

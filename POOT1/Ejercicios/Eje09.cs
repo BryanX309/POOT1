@@ -33,7 +33,7 @@ namespace POOT1.Ejercicios
             bool trian = false; //esta variable determinara si las medidas ingresadas son de un triangulo posible, si no es posible repetirá el proceso desde el inicio
             double l1=0, l2=0, l3=0;
 
-            while (!trian)
+            do
             {
                 Console.WriteLine("Clasificación de triángulos\n----------------------------------------\n");
 
@@ -51,7 +51,7 @@ namespace POOT1.Ejercicios
 
                 Console.Clear();
                 if (!trian) Console.WriteLine("Las medidas ingresadas no pueden formar un Triangulo\nInténtelo otra vez\n");
-            }
+            }while (!trian);
 
             double ang1 = calculoAngulo(l1,l2,l3);
             double ang2 = calculoAngulo(l2,l3,l1);

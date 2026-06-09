@@ -45,18 +45,22 @@ namespace POOT1
                 Console.WriteLine("30. Inventario simple");
 
                 Console.WriteLine("\nSeleccione la función a probar:");
-                selec = int.Parse(Console.ReadLine());
-                Console.Clear();
+                if (!int.TryParse(Console.ReadLine(), out selec) || selec < 0 || selec > 30)
+                {
+                    selec = -1;
+                }
+                
+                if(selec != 0) Console.Clear();
 
                 switch (selec)
                 {
                     case 0:
                         salir = true;
-                        // Console.WriteLine("Esta seguro que quiere Salir? (Y/N)");
-                        // ConsoleKeyInfo tecla = Console.ReadKey();
+                        Console.WriteLine("Esta seguro que quiere Salir? (Y/N)");
+                        ConsoleKeyInfo tecla = Console.ReadKey();
 
                         //aquí exit sera verdadero solo si la tecla pulsada es Y cancelando la condición del While
-                        //exit = (tecla.Key == ConsoleKey.Y);
+                        salir = (tecla.Key == ConsoleKey.Y);
                         break;
                     case 1: Eje01 ej1 = new Eje01(); break;
                     case 2: Eje02 ej2 = new Eje02(); break;
@@ -89,12 +93,12 @@ namespace POOT1
                     case 29: Eje29 ej29 = new Eje29(); break;
                     case 30: Eje30 ej30 = new Eje30(); break;
 
-                    default: Console.WriteLine("Ingrese un numero valido de Selecion"); Console.ReadKey(); break;
+                    default: Console.WriteLine("Ingrese un numero valido de Selección"); Console.ReadKey(); break;
                 }
 
                 if (selec != 0) Console.ReadKey();
             }
-            Console.WriteLine("Saliendo...");
+            Console.WriteLine("\nSaliendo...");
         }
     }
 }

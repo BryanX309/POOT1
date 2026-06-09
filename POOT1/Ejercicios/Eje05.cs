@@ -5,8 +5,8 @@ namespace POOT1.Ejercicios
 
         int ValidarHora(string msg="Ingrese la Primera Hora: ")
         {
-            int h=0;
-            while (h<=0)
+            int h=-1;
+            do
             {
                 string ingreso; string[] partes; //variables temporales usadas solo para validar formato de hora y separar sus partes
 
@@ -33,7 +33,7 @@ namespace POOT1.Ejercicios
                 {
                     Console.WriteLine("Ingrese una hora Valida\n");
                 }
-            }
+            }while (h<0);
 
             return h;
         }
@@ -41,7 +41,8 @@ namespace POOT1.Ejercicios
 
             int h1=0,h2=0,dif;
             Console.WriteLine("Tiempo transcurrido\n----------------------------------------");
-            Console.WriteLine("Formato de Hora(24h):Minutos:Segundos\nIncluir ceros y sin espacios\n");
+            Console.WriteLine("Formato de Hora(24h):Minutos:Segundos");
+            Console.WriteLine("Incluir ceros y sin espacios (00:00:00) \n");
 
             h1 = ValidarHora("Ingrese la Primera Hora: ");
             h2 = ValidarHora("Ingrese la Segunda Hora: ");
